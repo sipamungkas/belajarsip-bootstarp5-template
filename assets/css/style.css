@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap");
+html * {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6edf6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+}
+
+.login-container input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.login-container .btn-container {
+  margin-top: 100px;
+}
+
+.forgot-password {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+  text-align: right;
+  width: 100%;
+}
+
+.form-label-materialize {
+  color: #ada9bb;
+  top: 0.7rem;
+  left: 6px;
+  position: relative;
+  background-color: transparent;
+  padding: 0px 5px 0px 5px;
+  font-size: 14px;
+  line-height: 20.93px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.new-user-container {
+  position: fixed;
+  bottom: 1.8rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.new-user-text {
+  color: #ada9bb;
+}
+.register-text {
+  font-weight: 500;
+}
+
+/* btn */
+
+.btn-primary-color {
+  background-color: #5784ba;
+  color: white;
+}
+
+.btn-primary-color:hover {
+  background-color: rgb(58, 108, 170);
+  color: white;
+}
+
+.btn-google {
+  background-color: rgba(0, 13, 79, 0.08);
+  font-size: 0.75rem;
+}
+.btn-google:hover {
+  background-color: rgba(0, 13, 79, 0.171);
+  font-size: 0.75rem;
+}
+
+/* icon */
+.eye-icon {
+  position: absolute;
+  right: 6px;
+  margin-top: -2rem;
+}
+
+.google-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* utils */
+.touchable {
+  cursor: pointer;
+}

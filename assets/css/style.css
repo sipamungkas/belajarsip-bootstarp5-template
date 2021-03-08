@@ -1,10 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&family=Montserrat&display=swap");
+
+:root {
+  --blue: rgba(87, 132, 186, 1);
+  --dark-blue: rgb(58, 108, 170);
+  --light-blue: rgba(230, 237, 246, 1);
+  --pink: rgba(244, 207, 223, 1);
+  --light-white: rgba(249, 249, 249, 1);
+}
+
 html * {
   font-family: "Kanit", sans-serif;
   box-sizing: border-box;
+  color: rgba(1, 6, 32, 1);
 }
 body {
-  background-color: #e6edf6;
+  background-color: var(--light-blue);
 }
 
 a {
@@ -25,7 +35,7 @@ a {
   margin-top: 100px;
 }
 
-.forgot-password {
+.forgot-password-text {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 14px;
@@ -66,12 +76,12 @@ a {
 /* btn */
 
 .btn-primary-color {
-  background-color: #5784ba;
+  background-color: var(--blue);
   color: white;
 }
 
 .btn-primary-color:hover {
-  background-color: rgb(58, 108, 170);
+  background-color: var(--dark-blue);
   color: white;
 }
 
@@ -99,4 +109,35 @@ a {
 /* utils */
 .touchable {
   cursor: pointer;
+}
+
+.rounded-5px {
+  border-radius: 5px;
+}
+.rounded-10px {
+  border-radius: 10px;
+}
+
+/* reset password */
+.forgot-password-container {
+  background-color: white;
+}
+.question-ilustration-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.question-ilustration {
+  height: 15rem;
+}
+
+.reset-form-container {
+  padding: 0px 50px 50px 50px;
+}
+
+.reset-form-container h1 {
+  font-size: 2.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
 }

@@ -169,6 +169,202 @@ a {
   width: 100%;
 }
 
+/* profile */
+.dashboard-container {
+  display: flex;
+  margin: 1%;
+}
+
+.dashboard-container .humberger-icon {
+  display: block;
+  z-index: 10;
+  position: absolute;
+  left: 2%;
+  top: 1%;
+  opacity: 0.5;
+}
+
+.dashboard-container aside {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  height: 100%;
+}
+
+.dashboard-container aside .notification-icon {
+  margin: 15px;
+  width: 10%;
+  align-self: flex-end;
+}
+
+.dashboard-container aside .avatar-container {
+  padding: 0 10% 10% 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-container aside .avatar-container .avatar-name {
+  font-family: Roboto;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.dashboard-container aside .avatar-container .avatar-status {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.dashboard-container aside .avatar-image {
+  width: 100px;
+  height: 100px;
+}
+
+.dashboard-container aside .menu-container {
+  height: 100%;
+  background-color: var(--blue);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 5% 10% 10% 10%;
+}
+
+.dashboard-container aside .menu-container .menu-link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  position: relative;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  margin-top: 5%;
+}
+
+.dashboard-container aside .menu-container .menu-link .menu-icon {
+  margin-right: 10%;
+  height: 1.5rem;
+}
+
+.dashboard-container #main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  min-height: calc(100vh - 20px);
+  border-radius: 10px;
+}
+
+.dashboard-container #main-content .image-cover-container {
+  height: 90%;
+}
+
+.dashboard-container #main-content .image-cover-container .image-cover {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.dashboard-container #main-content .avatar-lg {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-49%, 0%);
+}
+
+.dashboard-container #main-content .avatar-lg .avatar-image-lg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.dashboard-container #main-content .avatar-lg .edit-avatar {
+  /* z-index: 10; */
+  position: absolute;
+  right: 0;
+  align-self: flex-end;
+  color: white;
+}
+
+.dashboard-container #main-content .avatar-lg span {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.dashboard-container #main-content .profile-setting {
+  height: 100%;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 2% 3% 5% 3%;
+}
+
+.dashboard-container #main-content .profile-setting h1 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dashboard-container #main-content .profile-setting .setting-list {
+  margin-top: 2%;
+  overflow-y: auto;
+}
+
+.dashboard-container
+  #main-content
+  .profile-setting
+  .setting-list
+  .setting-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3% 0 3%;
+  font-family: Kanit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 2% 0 2% 0;
+  border-bottom: 2px solid rgba(230, 237, 246, 1);
+}
+
+.dashboard-container
+  #main-content
+  .profile-setting
+  .setting-list
+  .setting-container
+  .setting-icon {
+  width: 1.5rem;
+  margin-right: 5px;
+}
+
 @media screen and (min-width: 768px) {
   /* reset password */
   .forgot-password-container {
@@ -209,10 +405,6 @@ a {
   }
 
   /* profile */
-  .dashboard-container {
-    display: flex;
-    margin: 10px;
-  }
 
   .dashboard-container aside {
     position: sticky;

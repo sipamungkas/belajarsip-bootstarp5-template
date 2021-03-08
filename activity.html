@@ -13,8 +13,8 @@
 <body>
     <div class="dashboard-container">
         <img src="assets/images/icons/humberger-icon.svg" class="humberger-icon" alt="Show Menu">
-        <aside class="bg-white">
-            <svg width="10%" height="10%" viewBox="0 0 24 24" class="notification-icon touchable fill-black"
+        <aside>
+            <svg width="10%" height="10%" viewBox="0 0 24 24" class="notification-icon touchable fill-white"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M10.9841 22.0001C11.3627 21.9913 11.7259 21.849 12.0097 21.5983C12.2934 21.3475 12.4794 21.0045 12.5346 20.6299H9.37354C9.43031 21.0147 9.62493 21.3658 9.92119 21.6178C10.2174 21.8698 10.5952 22.0057 10.9841 22.0001Z" />
@@ -24,10 +24,11 @@
                     d="M18.1957 8.00957C19.8552 8.00957 21.2005 6.66428 21.2005 5.00478C21.2005 3.34529 19.8552 2 18.1957 2C16.5362 2 15.1909 3.34529 15.1909 5.00478C15.1909 6.66428 16.5362 8.00957 18.1957 8.00957Z"
                     fill="#FF0000" />
             </svg>
+
             <div class="avatar-container">
                 <img src="assets/images/ilustration/avatar.svg" class="avatar-image" alt="">
-                <span class="avatar-name">Emir Kharisma</span>
-                <span class="avatar-status mt-1">Online</span>
+                <span class="avatar-name text-white">Emir Kharisma</span>
+                <span class="avatar-status mt-1 text-white">Online</span>
             </div>
             <div class="menu-container">
                 <div class="menu-link touchable">
@@ -39,7 +40,7 @@
                     </svg>
                     Dashboard
                 </div>
-                <div class="menu-link touchable">
+                <div class="menu-link touchable active">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.13086 5H22.1934V6.21094H8.13086V5Z" />
                         <path
@@ -61,102 +62,10 @@
             </div>
         </aside>
         <div id="main-content">
-            <div class="image-cover-container">
-                <img src="assets/images/profile-cover-image.png" alt="Profile Image cover" class="image-cover">
-                <div class="avatar-lg">
-                    <div class="d-flex">
-                        <img src="assets/images/ilustration/avatar.svg" class="avatar-image-lg" alt="Avatar Image">
-                        <img src="assets/images/icons/edit-icon.svg" class="edit-avatar" alt="Edit Icon">
-                    </div>
-                    <span>Emir Kharisma</span>
-                </div>
-            </div>
-            <div class="profile-setting">
-                <h1>Profile Setting</h1>
-                <div class="setting-list">
 
-                    <div class="setting-container touchable">
-                        <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row justify-content-between">
-                                <div>
-                                    <img src="assets/images/icons/phone-icon.svg" alt="Phone Icon" class="setting-icon">
-                                    Phone Number
-                                </div>
-                                <img src="assets/images/icons/forward-icon.svg" alt="Forward Icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="setting-container touchable">
-                        <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row justify-content-between">
-                                <div>
-                                    <img src="assets/images/icons/triple-star-icon.svg" alt="Triple Start Icon"
-                                        class="setting-icon">
-                                    Change Password
-                                </div>
-                                <img src="assets/images/icons/forward-icon.svg" alt="Forward Icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="setting-container touchable">
-                        <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row justify-content-between">
-                                <div>
-                                    <img src="assets/images/icons/chat-icon.svg" alt="Chat Icon" class="setting-icon">
-                                    Chat Settings
-                                </div>
-                                <img src="assets/images/icons/forward-icon.svg" alt="Forward Icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="setting-container touchable">
-                        <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row justify-content-between">
-                                <div>
-                                    <img src="assets/images/icons/no-notification-icon.svg" alt="No Notifications Icon"
-                                        class="setting-icon">
-                                    Push Notifications
-                                </div>
-                                <img src="assets/images/icons/forward-icon.svg" alt="Forward Icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="setting-container touchable">
-                        <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row justify-content-between">
-                                <div>
-                                    <img src="assets/images/icons/security-icon.svg" alt="Security Icon"
-                                        class="setting-icon">
-                                    Privacy and Security
-                                </div>
-                                <img src="assets/images/icons/forward-icon.svg" alt="Forward Icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="setting-container touchable">
-                        <div class="d-flex flex-column w-100">
-                            <div class="d-flex flex-row justify-content-between">
-                                <div>
-                                    <img src="assets/images/icons/storage-icon.svg" alt="Storage Icon"
-                                        class="setting-icon">
-                                    Data and Storage
-                                </div>
-                                <img src="assets/images/icons/forward-icon.svg" alt="Forward Icon">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
-    </div>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

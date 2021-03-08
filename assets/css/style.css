@@ -129,6 +129,14 @@ a {
   border-radius: 50%;
 }
 
+.fill-white {
+  fill: white;
+}
+
+.fill-black {
+  fill: black;
+}
+
 /* reset password */
 .forgot-password-container {
   background-color: white;
@@ -414,7 +422,7 @@ a {
     position: sticky;
     top: 10px;
     display: flex;
-    background-color: white;
+    background-color: var(--blue);
     flex-basis: 225px;
     flex-direction: column;
     flex-shrink: 0;
@@ -477,7 +485,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 5% 10% 10% 10%;
+    padding: 5% 0 0 0;
   }
 
   .dashboard-container aside .menu-container .menu-link {
@@ -490,13 +498,36 @@ a {
     font-style: normal;
     font-weight: 600;
     color: white;
-    margin-top: 5%;
+    margin-top: -6%;
+    padding: 5% 10% 10% 10%;
+    height: 15%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--blue);
   }
 
   .dashboard-container aside .menu-container .menu-link .menu-icon {
     margin-right: 10%;
     height: 1.5rem;
   }
+
+  .dashboard-container aside .menu-container .menu-link svg {
+    margin-right: 10px;
+    fill: white;
+  }
+
+  .dashboard-container aside .menu-container .active svg,
+  .dashboard-container aside .menu-container .menu-link:hover,
+  .dashboard-container aside .menu-container .menu-link:hover svg,
+  .dashboard-container aside .menu-container .active {
+    background-color: white;
+    color: rgba(47, 47, 47, 1);
+    fill: black;
+  }
+
+  /* .dashboard-container aside .menu-container .active svg { */
+  /* fill: black; */
+  /* } */
 
   .dashboard-container #main-content {
     position: relative;
@@ -508,7 +539,7 @@ a {
     min-height: calc(100vh - 20px);
     /* margin-left: -225px; */
     margin-left: 10px;
-    background-color: red;
+    background-color: goldenrod;
     border-radius: 10px;
   }
 

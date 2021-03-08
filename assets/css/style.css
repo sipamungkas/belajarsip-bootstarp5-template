@@ -128,21 +128,26 @@ a {
 /* reset password */
 .forgot-password-container {
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .question-ilustration-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
 }
-.question-ilustration {
-  height: 10rem;
+
+.question-ilustration-container img {
+  height: 80%;
+  width: 80%;
 }
 
 .reset-form-container h1 {
   font-size: 2.4rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 5%;
 }
 
 .enter-email-instruction {
@@ -154,4 +159,47 @@ a {
   font-weight: 400;
   font-size: 0.9rem;
   color: rgba(131, 127, 143, 1);
+}
+
+.forgot-password-container button {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .forgot-password-container {
+    background-color: var(--light-blue);
+    padding: 0;
+    margin: 0;
+  }
+
+  .question-ilustration-container img {
+    width: 45%;
+    height: 45%;
+  }
+
+  .reset-form-container {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reset-form-container button,
+  .reset-form-container .form-group {
+    width: 65%;
+  }
+
+  .reset-form-container h1 {
+    margin-bottom: 20%;
+  }
+
+  .reset-form-container .enter-email-instruction {
+    margin-bottom: 5%;
+  }
+
+  .reset-form-container .reset-description-text {
+    margin-bottom: 24%;
+  }
 }

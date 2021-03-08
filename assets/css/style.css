@@ -111,6 +111,13 @@ a {
   cursor: pointer;
 }
 
+.back-icon {
+  height: 2.4rem;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
 .rounded-5px {
   border-radius: 5px;
 }

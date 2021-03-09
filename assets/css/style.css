@@ -156,6 +156,10 @@ a {
   font-size: 12px;
 }
 
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
 /* reset password */
 .forgot-password-container {
   background-color: white;
@@ -478,8 +482,41 @@ a {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.dashboard-container #main-content .pagination-container {
+  font-family: Montserrat;
+  margin-left: 3px;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 500;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.dashboard-container #main-content .pagination-container .table-page {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  font-size: 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.dashboard-container #main-content .pagination-container .table-page:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.dashboard-container #main-content .pagination-container .active {
+  background-color: var(--blue);
+  color: white;
+}
+
 .dashboard-container #main-content .search-filter {
-  padding: 10px;
+  padding: 8px 15px 8px 15px;
   background-color: rgba(238, 238, 238, 1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

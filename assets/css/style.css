@@ -399,6 +399,7 @@ a {
 /* activity */
 .dashboard-container #main-content table {
 }
+
 .dashboard-container #main-content table th {
   font-family: Montserrat;
   font-size: 0.9rem;
@@ -406,29 +407,25 @@ a {
   font-weight: 600;
 }
 
-.dashboard-container #main-content table tbody tr {
+.dashboard-container #main-content .my-class-table tbody tr {
   background-color: white;
+  border-bottom: 3px solid var(--light-blue);
 }
 
-.dashboard-container #main-content table tbody tr th {
+.dashboard-container #main-content .my-class-table tbody tr th {
   text-align: center;
 }
 
-.dashboard-container #main-content table tbody tr th:first-child {
+.dashboard-container #main-content .my-class-table tbody tr th:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.dashboard-container
-  #main-content
-  .new-class-table
-  table
-  tbody
-  tr
-  td:first-child {
+.dashboard-container #main-content .new-class-table tbody tr td:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.dashboard-container #main-content table tbody tr td:last-child {
+.dashboard-container #main-content .my-class-table tbody tr td:last-child,
+.dashboard-container #main-content .new-class-table tbody tr td:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -438,7 +435,6 @@ a {
   /* background-color: red; */
   padding: 5px;
   font-size: 0.8rem;
-  border-bottom: 2px solid transparent;
   vertical-align: middle;
 }
 
@@ -451,7 +447,7 @@ a {
   color: var(--blue);
 }
 
-.dashboard-container #main-content table tbody tr td .score {
+.dashboard-container #main-content .my-class-table tbody tr td .score {
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -476,10 +472,20 @@ a {
   text-align: left;
 }
 
-.dashboard-container #main-content .new-class-table table tbody tr {
+.dashboard-container #main-content .new-class-table tbody tr {
   /* margin-top: 10px; */
   /* box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); */
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  /* margin: 5px; */
+  /* background-color: red; */
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.1); */
+  /* border-left: 3px solid var(--light-blue);
+  border-right: 3px solid var(--light-blue); */
+}
+
+.dashboard-container #main-content .new-class-table tbody tr td {
+  padding: 10px;
 }
 
 .dashboard-container #main-content .pagination-container {
@@ -659,7 +665,7 @@ a {
     font-weight: 600;
     color: white;
     margin-top: -6%;
-    padding: 5% 10% 10% 10%;
+    padding: 10% 15% 15% 15%;
     height: 15%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

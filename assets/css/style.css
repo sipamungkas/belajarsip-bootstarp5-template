@@ -664,7 +664,7 @@ a {
   position: absolute;
   padding-left: 5%;
   padding-right: 5%;
-  top: 30%;
+  top: 43%;
   height: 40vh;
   position: absolute;
   display: flex;
@@ -685,11 +685,24 @@ a {
 #main-content .cover-description .cover-description-content {
   display: flex;
   flex: 1;
+  height: 70%;
   flex-wrap: wrap;
   padding-right: 1%;
   align-items: center;
   justify-content: space-between;
   /* background-color: red; */
+}
+
+.cover-description .cover-description-level {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  max-width: 150%;
+  /* background-color: #fff; */
+}
+
+.cover-description .cover-description-level span {
+  margin-right: 4%;
 }
 
 .dashboard-container .card .card-body .class-description-container {
@@ -762,6 +775,67 @@ a {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+/* activity 4 class progress */
+.cover-description .score {
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(81, 231, 43, 1);
+}
+
+.cover-description .cover-description-content .score {
+  padding-bottom: 40%;
+}
+
+.horizontal-progress-container {
+  /* margin-top: 10%; */
+  padding-top: 5%;
+}
+
+.horizontal-progress-container span {
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.horizontal-background {
+  position: relative;
+  height: 7px;
+  background-color: rgba(196, 196, 196, 1);
+}
+
+.horizontal-progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(87, 132, 186, 1);
+}
+.progress-class-table tbody tr th {
+  text-align: center;
+  vertical-align: middle;
+}
+.progress-class-table tbody tr td:nth-child(4) {
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(81, 231, 43, 1);
+}
+
+.progress-class-table .description .score {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(81, 231, 43, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1038,7 +1112,29 @@ a {
     flex-direction: column;
   }
 
-  .class-description-container {
-    margin-top: 30%;
+  .card-body {
+    margin-top: 5%;
+  }
+  .cover-description-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-body {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .card-body {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .card-body {
+    margin-top: 40%;
   }
 }

@@ -823,6 +823,18 @@ a {
 }
 .progress-class-table tbody tr td:nth-child(4) {
   text-align: right;
+}
+
+.dashboard-container
+  .card
+  .card-body
+  .class-description-container
+  .description
+  .progress-class-table
+  tbody
+  tr
+  td:nth-child(4)
+  .score {
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -1113,7 +1125,7 @@ a {
   }
 
   .card-body {
-    margin-top: 5%;
+    margin-top: 7%;
   }
   .cover-description-content {
     display: flex;
@@ -1123,18 +1135,18 @@ a {
 
 @media screen and (max-width: 576px) {
   .card-body {
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 
 @media screen and (max-width: 478px) {
   .card-body {
-    margin-top: 20%;
+    margin-top: 50%;
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 349) {
   .card-body {
-    margin-top: 40%;
+    margin-top: 90%;
   }
 }

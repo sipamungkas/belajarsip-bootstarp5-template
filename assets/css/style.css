@@ -263,7 +263,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: white;
   height: 100%;
 }
@@ -1276,6 +1276,24 @@ a {
   }
 
   .dashboard-container aside .menu-container .menu-link {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    color: white;
+    margin-top: -6%;
+    padding: 10% 15% 15% 15%;
+    height: 15%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--blue);
+  }
+
+  .dashboard-container aside .menu-container .empty-menu-link {
     display: flex;
     align-items: center;
     padding-bottom: 0.75rem;

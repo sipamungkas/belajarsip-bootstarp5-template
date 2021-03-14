@@ -1182,6 +1182,7 @@ a {
   padding: 2%;
   padding: 1.4rem 2% 1.4rem 2%;
   overflow-y: scroll;
+  margin: 0;
 }
 
 .dashboard-container #message-container .search-box {
@@ -1527,6 +1528,8 @@ a {
 
   .dashboard-container #message-container {
     display: none;
+    margin-top: 48px;
+    height: calc(100vh - 48px);
   }
 }
 

@@ -205,6 +205,13 @@ a {
   transform: rotate(90deg);
 }
 
+.td-truncate{
+  white-space: nowrap; 
+  text-overflow:ellipsis; 
+  overflow: hidden; 
+  max-width:1px;
+}
+
 /* reset password */
 .forgot-password-container {
   background-color: white;
@@ -1515,11 +1522,12 @@ a {
   .card-body {
     margin-top: 7%;
   }
+
   .cover-description-content {
     display: flex;
     flex-direction: row;
   }
-
+  /* dashboard */
   .dashboard-container #dashboard-peserta {
     /* display: none; */
     min-width: 100%;

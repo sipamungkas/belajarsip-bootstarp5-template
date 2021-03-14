@@ -268,6 +268,10 @@ a {
   height: 100%;
 }
 
+.dashboard-container aside svg {
+  fill: white;
+}
+
 .dashboard-container aside .notification-icon {
   margin: 15px;
   width: 10%;
@@ -301,6 +305,10 @@ a {
 .dashboard-container aside .avatar-image {
   width: 100px;
   height: 100px;
+}
+
+.dashboard-container aside .avatar-container.active {
+  background-color: white;
 }
 
 .dashboard-container
@@ -1307,6 +1315,12 @@ a {
     font-weight: 400;
   }
 
+  .dashboard-container aside .avatar-container.active {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
   .dashboard-container aside .avatar-image {
     width: 56px;
     height: 56px;
@@ -1352,12 +1366,6 @@ a {
   .dashboard-container aside .menu-container .menu-link svg {
     margin-right: 10px;
     fill: white;
-  }
-
-  .dashboard-container aside .menu-container .menu-link svg {
-    /* background-color: white; */
-    /* color: rgba(47, 47, 47, 1); */
-    /* fill: white; */
   }
 
   .dashboard-container aside .active svg,

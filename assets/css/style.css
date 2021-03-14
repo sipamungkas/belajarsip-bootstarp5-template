@@ -264,7 +264,7 @@ a {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: white;
+  background-color: var(--blue);
   height: 100%;
 }
 
@@ -303,7 +303,12 @@ a {
   height: 100px;
 }
 
-.dashboard-container aside .menu-container {
+.dashboard-container
+  aside
+  .avatar-container
+  .dashboard-container
+  aside
+  .menu-container {
   height: 100%;
   background-color: var(--blue);
   border-top-left-radius: 20px;
@@ -314,10 +319,20 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 5% 10% 10% 10%;
+  /* padding: 5% 10% 10% 10%; */
 }
 
 .dashboard-container aside .menu-container .menu-link {
+  /* display: flex;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  position: relative;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 600;
+  color: white; */
+  /* margin-top: 5%; */
   display: flex;
   align-items: center;
   padding-bottom: 0.75rem;
@@ -327,12 +342,48 @@ a {
   font-style: normal;
   font-weight: 600;
   color: white;
-  margin-top: 5%;
+  padding: 5% 10% 10% 10%;
+  min-height: 80px;
+  height: 15%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--blue);
+}
+.dashboard-container aside .menu-container .menu-link:not(:first-child) {
+  margin-top: -6%;
+}
+
+.dashboard-container aside .menu-container .empty-menu-link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  position: relative;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  margin-top: -6%;
+  padding: 10% 15% 15% 15%;
+  height: 15%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--blue);
 }
 
 .dashboard-container aside .menu-container .menu-link .menu-icon {
   margin-right: 10%;
   height: 1.5rem;
+}
+
+.dashboard-container aside .active svg,
+.dashboard-container aside .menu-container .active svg,
+.dashboard-container aside .menu-container .menu-link:hover,
+.dashboard-container aside .menu-container .menu-link:hover svg,
+.dashboard-container aside .menu-container .active {
+  background-color: white;
+  color: rgba(47, 47, 47, 1);
+  fill: black;
 }
 
 .dashboard-container #main-content {
@@ -1293,24 +1344,6 @@ a {
     background-color: var(--blue);
   }
 
-  .dashboard-container aside .menu-container .empty-menu-link {
-    display: flex;
-    align-items: center;
-    padding-bottom: 0.75rem;
-    position: relative;
-    font-family: Montserrat;
-    font-size: 0.9rem;
-    font-style: normal;
-    font-weight: 600;
-    color: white;
-    margin-top: -6%;
-    padding: 10% 15% 15% 15%;
-    height: 15%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: var(--blue);
-  }
-
   .dashboard-container aside .menu-container .menu-link .menu-icon {
     margin-right: 10%;
     height: 1.5rem;
@@ -1321,6 +1354,13 @@ a {
     fill: white;
   }
 
+  .dashboard-container aside .menu-container .menu-link svg {
+    /* background-color: white; */
+    /* color: rgba(47, 47, 47, 1); */
+    /* fill: white; */
+  }
+
+  .dashboard-container aside .active svg,
   .dashboard-container aside .menu-container .active svg,
   .dashboard-container aside .menu-container .menu-link:hover,
   .dashboard-container aside .menu-container .menu-link:hover svg,

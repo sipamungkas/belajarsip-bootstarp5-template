@@ -21,8 +21,21 @@ a {
   text-decoration: none;
 }
 
+/* login */
+
 .container {
   height: 100vh;
+}
+
+.login-container {
+  width: 30%;
+}
+
+.login-container input {
+  width: 100%;
+  border: 1px solid rgba(173, 169, 187, 0.3);
+  border-radius: 5px;
+  height: 2.4rem;
 }
 
 .login-container input:focus {
@@ -32,7 +45,21 @@ a {
 }
 
 .login-container .btn-container {
-  margin-top: 100px;
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.login-container .btn-container .btn-pure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  height: 2.4rem;
+  border-radius: 5px;
+  border: none;
 }
 
 .forgot-password-text {
@@ -41,6 +68,9 @@ a {
   font-size: 14px;
   text-align: right;
   width: 100%;
+  float: right;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .form-label-materialize {
@@ -88,10 +118,10 @@ a {
 .btn-google {
   background-color: rgba(0, 13, 79, 0.08);
   font-size: 0.75rem;
+  margin-top: 1rem;
 }
 .btn-google:hover {
   background-color: rgba(0, 13, 79, 0.171);
-  font-size: 0.75rem;
 }
 
 .btn-success {
@@ -110,12 +140,13 @@ a {
 .eye-icon {
   position: absolute;
   right: 6px;
-  margin-top: -2rem;
+  top: 50%;
 }
 
 .google-icon {
   height: 1.5rem;
   width: 1.5rem;
+  margin: 0 0.75rem;
 }
 
 /* utils */
@@ -1577,6 +1608,11 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  /* login */
+  .login-container {
+    width: 60%;
+  }
+
   /* activity */
   .cover-description {
     display: flex;
@@ -1619,18 +1655,21 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+  /* activity */
   .card-body {
     margin-top: 15%;
   }
 }
 
 @media screen and (max-width: 478px) {
+  /* activity */
   .card-body {
     margin-top: 50%;
   }
 }
 
 @media screen and (max-width: 349) {
+  /* activity */
   .card-body {
     margin-top: 90%;
   }

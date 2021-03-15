@@ -11,16 +11,16 @@ showMenu.addEventListener("click", function () {
     if (document.getElementById("main-content")) {
       document.getElementById("main-content").style = "flex";
     }
-    if (document.getElementById("dashboard-peserta")) {
-      document.getElementById("dashboard-peserta").style = "flex";
+    if (document.getElementById("main-dashboard")) {
+      document.getElementById("main-dashboard").style = "flex";
     }
   } else {
     sidebar.style.display = "flex";
     if (document.getElementById("main-content")) {
       document.getElementById("main-content").style = "none";
     }
-    if (document.getElementById("dashboard-peserta")) {
-      document.getElementById("dashboard-peserta").style = "none";
+    if (document.getElementById("main-dashboard")) {
+      document.getElementById("main-dashboard").style = "none";
     }
   }
   if (document.getElementById("message-container")) {
@@ -33,13 +33,13 @@ if (document.getElementById("chat-icon")) {
     const messageContainer = document.getElementById("message-container");
     if (messageContainer.style.display === "flex") {
       messageContainer.style.display = "none";
-      if (document.getElementById("dashboard-peserta")) {
-        document.getElementById("dashboard-peserta").style.display = "flex";
+      if (document.getElementById("main-dashboard")) {
+        document.getElementById("main-dashboard").style.display = "flex";
       }
     } else {
       messageContainer.style.display = "flex";
-      if (document.getElementById("dashboard-peserta")) {
-        document.getElementById("dashboard-peserta").style.display = "none";
+      if (document.getElementById("main-dashboard")) {
+        document.getElementById("main-dashboard").style.display = "none";
       }
     }
     document.getElementById("sidebar").style.display = "none";

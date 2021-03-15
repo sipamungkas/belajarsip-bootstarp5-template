@@ -1552,6 +1552,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  /* activity */
   .cover-description {
     display: flex;
     flex-direction: row;
@@ -1571,6 +1572,11 @@ a {
     display: flex;
     flex-direction: row;
   }
+
+  table .table-category,table .table-description,table .table-status{
+    display: none;
+  }
+
   /* dashboard */
   .dashboard-container #dashboard-peserta {
     /* display: none; */

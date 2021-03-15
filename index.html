@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
 </head>
+
 <body>
+    <div class="container d-flex align-items-center justify-content-center">
+        <div class="login-container col-10 col-md-4 col-lg-3">
+            <div class="form-group">
+                <label for="username" class="form-label-materialize">Username or Email</label>
+                <input type="email" class="form-control" id="username" placeholder="">
+            </div>
+            <div class="form-group">
+                <div class="password-container">
+                    <label for="password" class="form-label-materialize">Password</label>
+                    <input type="password" class="form-control" id="password">
+                    <img src="assets/images/icons/eye-icon.svg" alt="eye icon" class="eye-icon touchable">
+                </div>
+            </div>
+            <a class="forgot-password-text float-end mt-2 mb-6" href="reset-password.html">Forgot
+                password?</a>
+
+            <div class="btn-container d-grid gap-2 col-12 mx-auto">
+                <a href="profile.html" class="btn btn-primary-color mb-2" type="button">Login</a>
+                <button class="btn btn-google" type="button">
+                    <img src="assets/images/icons/google-icon.svg" alt="google icon" class="google-icon mx-1">Login with
+                    google</button>
+            </div>
+            <div class="new-user-container">
+                <span class="new-user-text">New user? </span> <a register-text href="">Register</a>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>

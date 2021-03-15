@@ -182,7 +182,6 @@ a {
   border-bottom-right-radius: 15px;
 }
 
-
 .fill-white {
   fill: white;
 }
@@ -209,7 +208,7 @@ a {
 
 .single-chart {
   width: 55%;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
 .circular-chart {
@@ -249,11 +248,11 @@ a {
   text-anchor: middle;
 }
 
-.td-truncate{
-  white-space: nowrap; 
-  text-overflow:ellipsis; 
-  overflow: hidden; 
-  max-width:1px;
+.td-truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 1px;
 }
 
 /* reset password */
@@ -972,6 +971,32 @@ a {
   font-weight: 700;
   color: rgba(81, 231, 43, 1);
 }
+.dashboard-container
+  .card
+  .card-body
+  .class-description-container
+  .description
+  .progress-class-table
+  tbody
+  tr
+  td {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.dashboard-container
+  .card
+  .card-body
+  .class-description-container
+  .description
+  .progress-class-table
+  tbody
+  tr
+  .completed {
+  font-style: italic;
+}
 
 /* dashboard peserta 1 */
 .dashboard-container #dashboard-peserta {
@@ -1573,7 +1598,9 @@ a {
     flex-direction: row;
   }
 
-  table .table-category,table .table-description,table .table-status{
+  table .table-category,
+  table .table-description,
+  table .table-status {
     display: none;
   }
 

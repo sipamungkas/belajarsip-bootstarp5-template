@@ -642,6 +642,10 @@ a {
   vertical-align: middle;
 }
 
+.dashboard-container #main-content .my-class-table .perfect {
+  background-image: linear-gradient(var(--light-blue), white);
+}
+
 .badge-ongoing {
   background-color: rgba(210, 222, 237, 1);
   font-family: Montserrat;

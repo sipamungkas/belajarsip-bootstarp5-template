@@ -493,6 +493,8 @@ a {
   min-width: 0;
   min-height: calc(100vh - 20px);
   border-radius: 10px;
+  flex-grow: 1;
+  justify-content: start;
 }
 
 .dashboard-container #main-content .image-cover-container {
